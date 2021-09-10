@@ -10,11 +10,6 @@ const user: User = {
   id: 1,
 };
 
-const user2: User = {
-  userName: "Hayes",
-  userId: 1,
-};
-
 // OOP:
 
 class UserAccount {
@@ -28,7 +23,6 @@ class UserAccount {
 }
 
 const user3: User = new UserAccount("Murphy", 1);
-const user4: User = new UserAccount("Error", "1");
 
 function getAdminUser(name: String, id: Number): User {
   const admin = { name, id };
@@ -36,11 +30,11 @@ function getAdminUser(name: String, id: Number): User {
 };
 
 getAdminUser("Admin", 2);
-getAdminUser(123, true); // Error
 
 function deleteUser(user: User) {
   return `Deleted user ${user.name}`;
 };
 
 deleteUser({ name: "Brad", id: 1 });
-deleteUser({ name: "asd", id: true });
+
+console.log(user);
