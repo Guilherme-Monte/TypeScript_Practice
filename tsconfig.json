@@ -1,8 +1,12 @@
+// Pode inicializar um tsconfig com tsc --init
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "ESNEXT",
     "module": "commonjs",
     "outDir": "./dist",
+    "removeComments": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
   },
   "include": [
     "./src/**/*"
@@ -11,3 +15,4 @@
     "node_modules"
   ]
 }
+// tsc --noEmitOnError arquivo.ts (pesquisar como usar, provavelmente no compilerOptions)

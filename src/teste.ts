@@ -1,8 +1,8 @@
 let helloWorldTS = "Hello World TS";
 
 interface User {
-  name: String;
-  id: Number;
+  name: string;
+  id: number;
 };
 
 const user: User = {
@@ -13,10 +13,10 @@ const user: User = {
 // OOP:
 
 class UserAccount {
-  name: String;
-  id: Number;
+  name: string;
+  id: number;
 
-  constructor(name: String, id: Number) {
+  constructor(name: string, id: number) {
     this.name = name;
     this.id = id;
   };
@@ -24,7 +24,8 @@ class UserAccount {
 
 const user3: User = new UserAccount("Murphy", 1);
 
-function getAdminUser(name: String, id: Number): User {
+// O : User após o parêntesis especifíca o valor retornado
+function getAdminUser(name: string, id: number): User {
   const admin = { name, id };
   return admin;
 };

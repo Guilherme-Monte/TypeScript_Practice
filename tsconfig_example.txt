@@ -1,0 +1,30 @@
+Para NodeJS:
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "lib": ["dom", "es2017", "esnext.asynciterable"], //libs para tipos que o cara precisou criar
+    "sourceMap": true, // Para erros
+    "outDir": "./dist",
+    "moduleResolution": "node", //Talvez comentar isso quando react
+
+    "removeComments": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": false // Ele alterna para quando tem coisas muito aninhadas: permite importar só com o nome do arquivo ("../../arquivo" como "arquivo")
+    //"experimentalDecorators": true, //permite usar decorators para graphql ou typeorm
+  },
+  "exclude": ["node_modules"],
+  "include": ["./src/**/*.tsx", "./src/**/*.ts"]
+}
+
+Fonte: https://github.com/benawad/node-ts-graphql-boilerplate/blob/master/tsconfig.json
